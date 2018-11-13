@@ -1,2 +1,6 @@
-public class testgit {
+public class testgit{
+    public static void main(String[] args) {
+        
+    }
+
 }
