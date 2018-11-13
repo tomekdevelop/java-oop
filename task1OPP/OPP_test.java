@@ -4,14 +4,27 @@ public class OPP_test {
 
     public static void main(String[] args) {
 
-        Square square1 = new Square(10, "czerwony");
-        Rectangle rectangle1 = new Rectangle(10, 20, "niebieski");
+        Square smallSquare = new Square(10, "czerwony");
+        Square bigSquare = new Square(11, "czerwony");
 
-        System.out.println("Prostokat: "+ rectangle1.countArea());
-        System.out.println("Kwadrat: "+ square1.countArea());
+        String napis1 = new String("a");
+        String napis2 = new String("a");
 
-        square1.setA(5);
-        rectangle1.setA(4);
+        if(napis1.equals(napis2)){
+            System.out.println("takie same");
+        }else {
+            System.out.println("nie sa takie same");
+        }
+
+
+        if(smallSquare.equals(bigSquare)){
+            System.out.println("sa rowne");
+        }else {
+            System.out.println("nie sa");
+        }
+
+
+
 
     }
 }
