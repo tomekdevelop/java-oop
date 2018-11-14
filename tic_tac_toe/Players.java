@@ -14,13 +14,20 @@ public class Players {
         this.name = name;
     }
 
-    public char checkBox() {
+    public char readNumberBox() {
         Scanner in = new Scanner(System.in);
-        System.out.println("Podaj nr pola: ");
+        System.out.println(" podaj nr pola: ");
         String numberBox = in.next();
         char checkBox = numberBox.charAt(0);
 
         return checkBox;
+    }
+    public String addNamePlayer(){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Podaj imie: ");
+        String name = in.next();
+
+        return name;
     }
 
 }

@@ -15,4 +15,29 @@ public class BoardGame {
         }
         return emptyBoardChar;
     }
+
+    public boolean checkBoard(char[][] board, char symbol) {
+            boolean result;
+
+        if(board[0][0] == symbol && board[0][1] == symbol && board[0][2] == symbol){
+            result = true;
+        }else if(board[1][0] == symbol && board[1][1] == symbol && board[1][2] == symbol){
+            result = true;
+        }else if (board[2][0] == symbol && board[2][1] == symbol && board[2][2] == symbol){
+            result = true;
+        }else if (board[0][0] == symbol && board[1][0] == symbol && board[2][0] == symbol){
+            result = true;
+        }else if (board[0][1] == symbol && board[1][1] == symbol && board[2][1] == symbol){
+            result = true;
+        }else if (board[0][2] == symbol && board[1][2] == symbol && board[2][2] == symbol){
+            result = true;
+        }else if (board[0][0] == symbol && board[1][1] == symbol && board[2][2] == symbol){
+            result = true;
+        }else if (board[0][2] == symbol && board[1][1] == symbol && board[2][0] == symbol){
+            result = true;
+        }else {
+            result = false;
+        }
+        return result;
+    }
 }

@@ -1,6 +1,6 @@
 package task1OPP;
 
-public abstract class Figure {
+public abstract class Figure implements AreaCountable {
 
     protected String color;
 
