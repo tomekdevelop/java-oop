@@ -31,8 +31,8 @@ public class Game {
                 draw.drawBoard(table);
                 result = boardGame.checkBoard(table, 'X');
 
-                if (result){
-                    System.out.println("Wygral: "+ p1.getName());
+                if (result) {
+                    System.out.println("Wygral: " + p1.getName());
                     break;
                 }
                 countGame++;
@@ -42,8 +42,8 @@ public class Game {
                 draw.drawSymbol(table, checkNumberBox, 'O');
                 draw.drawBoard(table);
                 result = boardGame.checkBoard(table, 'O');
-                if (result){
-                    System.out.println("Wygral: "+ p2.getName());
+                if (result) {
+                    System.out.println("Wygral: " + p2.getName());
                     break;
                 }
 
@@ -51,7 +51,7 @@ public class Game {
 
             }
 
-            if(countGame == 9){
+            if (countGame == 9) {
                 System.out.println("Remis!");
                 break;
             }

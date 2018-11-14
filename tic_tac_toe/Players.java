@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Players {
 
-    protected String name;
+    private String name;
 
     public String getName() {
         return name;
